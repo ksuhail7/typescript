@@ -29,4 +29,10 @@ var classes;
     var engine = new Engine(2000, "v8");
     var car = new Car(engine);
     console.log(car.engine);
+    window.onload = function () {
+        var engine = new Engine(300, 'v8');
+        var car = new Car(engine);
+        alert(car.engine.engineType);
+        car.start();
+    };
 })(classes || (classes = {}));
